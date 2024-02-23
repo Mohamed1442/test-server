@@ -1,0 +1,73 @@
+{
+  "users": [
+    { "id": "murTNdV5r2gdJcNL2JRxEHBpzHO2", "name": "Omar", "role": "owner" },
+    { "id": "1uLKnSGwQFUBXNrqBM9unD6pKQf1", "name": "Ahmed", "role": "sitter" },
+    { "id": "E2MoP7nLTNOdmrLQR3Hl3CBXkwh1", "name": "Vet Care", "role": "vet" }
+  ],
+  "pets": [
+    { "id": "1", "name": "Kitty", "age": 2,  "type": "Cat" },
+    { "id": "2", "name": "Max", "age": 4,  "type": "Dog" }
+  ],
+  "categories": [
+    { "id": "1", "type": "Food", "limit": 20 },
+    { "id": "2", "type": "Toy", "limit": 5 }
+  ],
+  "assignation": [
+    {
+      "id":"1",
+      "name":"Kitty",
+      "availableSitters":[
+        {
+          "id":"1",
+          "name":"Omar"
+        }
+      ],
+      "selectedSitters":[
+        {
+          "id":"2",
+          "name":"Osama",
+          "role":"Caretaker"
+        },
+        {
+          "id":"3",
+          "name":"Ahmed",
+          "role":"Secondary"
+        }
+      ]
+    },
+    {
+      "id":"2",
+      "name":"Max",
+      "availableSitters":[
+        {
+          "id":"4",
+          "name":"Omar"
+        },
+        {
+          "id":"5",
+          "name":"Osama"
+        },
+        {
+          "id":"6",
+          "name":"Ahmed"
+        }
+      ],
+      "selectedSitters":[]
+    }
+  ],
+  "sitter": [
+    { "id": "PBgO88b6JghcOCJ19SJlFjBksj32", "name": "Ahmed", "role": "sitter" },
+    { "id": "2", "name": "May", "role": "sitter" }
+  ],
+  "vet": [
+    { "id": "E2MoP7nLTNOdmrLQR3Hl3CBXkwh1", "name": "Vet Care", "role": "vet" }
+  ],
+  "owner-expenses": [{"type": "toy", "expense": "3", "date": "12-02-2024"}, {"type": "food", "expense": "10", "date": "15-02-2024"}
+  ],
+  "confirm-expenses": [{"id": "1","type": "toy", "expense": "3", "sitterName": "Omar"}, {"id": "2","type": "food", "expense": "10", "sitterName": "Osama"}
+  ],
+  "confirm-invoices": [{"id": "1","type": "Animal Trainer", "expense": "17", "confirmed": false, "petName": "Kitty"}, {"id": "2","type": "Administer medications", "expense": "10", "petName": "Max", "confirmed": true}
+  ],
+  "track-invoices": [{"id": "1","type": "Animal Trainer", "expense": "17", "pending": false, "petName": "Kitty"}, {"id": "2","type": "Administer medications", "expense": "10", "petName": "Max", "pending": true}
+  ]
+}
